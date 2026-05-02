@@ -91,12 +91,16 @@ export default function Hero({ onOpenDrawer }: HeroProps) {
   }, [])
 
   return (
-    <section ref={sectionRef} className="relative h-screen min-h-[720px] overflow-hidden px-container" id="top">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_38%,rgba(45,91,255,0.24),transparent_30%),linear-gradient(180deg,rgba(5,5,5,0)_0%,#050505_92%)]" />
+    <section
+      ref={sectionRef}
+      className="relative min-h-[720px] overflow-hidden px-container sm:h-screen sm:min-h-[760px]"
+      id="top"
+    >
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_44%,rgba(45,91,255,0.24),transparent_32%),linear-gradient(180deg,rgba(5,5,5,0)_0%,#050505_92%)] sm:bg-[radial-gradient(circle_at_50%_38%,rgba(45,91,255,0.24),transparent_30%),linear-gradient(180deg,rgba(5,5,5,0)_0%,#050505_92%)]" />
 
       <div
         ref={wordRef}
-        className="text-stroke pointer-events-none absolute left-1/2 top-[18%] -translate-x-1/2 select-none font-display text-[clamp(6rem,23vw,22rem)] font-semibold leading-none opacity-70"
+        className="text-stroke pointer-events-none absolute left-1/2 top-[25%] -translate-x-1/2 select-none font-display text-[clamp(5.5rem,34vw,10rem)] font-semibold leading-none opacity-60 sm:top-[20%] sm:text-[clamp(8rem,24vw,22rem)] sm:opacity-70 lg:top-[18%]"
       >
         WEBAURA
       </div>
@@ -106,7 +110,7 @@ export default function Hero({ onOpenDrawer }: HeroProps) {
           ref={sphereRef}
           src="/assets/hero-glass-growth-BGRemove.png"
           alt="Glass sphere growth visual"
-          className="mt-16 h-[min(62vw,620px)] min-h-[310px] w-[min(62vw,620px)] min-w-[310px] object-contain drop-shadow-[0_40px_90px_rgba(45,91,255,0.35)] will-change-transform"
+          className="mt-8 h-[min(82vw,430px)] min-h-[270px] w-[min(82vw,430px)] min-w-[270px] object-contain drop-shadow-[0_40px_90px_rgba(45,91,255,0.35)] will-change-transform sm:mt-16 sm:h-[min(62vw,620px)] sm:min-h-[310px] sm:w-[min(62vw,620px)] sm:min-w-[310px]"
           loading="eager"
           decoding="async"
         />
@@ -114,17 +118,17 @@ export default function Hero({ onOpenDrawer }: HeroProps) {
 
       <div
         ref={foregroundRef}
-        className="relative z-10 mx-auto flex h-full max-w-[1440px] flex-col justify-end pb-[clamp(3rem,8vw,6rem)]"
+        className="relative z-10 mx-auto flex min-h-[720px] max-w-[1440px] flex-col justify-center pb-12 pt-28 text-center sm:h-full sm:min-h-[760px] sm:justify-end sm:pb-[clamp(3rem,8vw,6rem)] sm:pt-0 sm:text-left"
       >
-        <div className="max-w-[980px]">
-          <p className="hero-reveal mb-5 font-mono text-xs uppercase text-accent">
+        <div className="mx-auto max-w-[980px] sm:mx-0">
+          <p className="hero-reveal mb-4 font-mono text-xs uppercase text-accent sm:mb-5">
             Local search. WhatsApp leads. Premium websites.
           </p>
-          <h1 className="hero-reveal font-display text-[clamp(3.4rem,10vw,9.5rem)] font-semibold leading-[0.9]">
+          <h1 className="hero-reveal font-display text-[clamp(3rem,15vw,5.2rem)] font-semibold leading-[0.92] sm:text-[clamp(3.8rem,10vw,9.5rem)] sm:leading-[0.9]">
             Grow Your Local Business Online
           </h1>
-          <div className="hero-reveal mt-8 flex max-w-[760px] flex-col gap-5 sm:flex-row sm:items-center">
-            <p className="text-body-lg leading-8 text-muted">
+          <div className="hero-reveal mx-auto mt-7 flex max-w-[760px] flex-col items-center gap-5 sm:mx-0 sm:mt-8 sm:flex-row sm:items-center">
+            <p className="text-body-lg leading-7 text-muted sm:leading-8">
               Webaura designs conversion-focused websites that turn nearby searches into calls,
               WhatsApp inquiries, bookings, and repeat customers.
             </p>
