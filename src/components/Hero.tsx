@@ -120,7 +120,7 @@ export default function Hero({ onOpenDrawer }: HeroProps) {
         ref={foregroundRef}
         className="relative z-10 mx-auto flex min-h-[720px] max-w-[1440px] flex-col justify-center pb-12 pt-28 text-center sm:h-full sm:min-h-[760px] sm:justify-end sm:pb-[clamp(3rem,8vw,6rem)] sm:pt-0 sm:text-left"
       >
-        <div className="mx-auto max-w-[980px] sm:mx-0">
+        <div className="mx-auto max-w-[980px] sm:mx-0 translate-y-0 md:-translate-y-10 lg:translate-y-10">
           <p className="hero-reveal mb-4 font-mono text-xs uppercase text-accent sm:mb-5">
             Local search. WhatsApp leads. Premium websites.
           </p>
