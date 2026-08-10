@@ -1,14 +1,14 @@
 export const contactDetails = {
-  city: 'Pune',
-  phoneDisplay: '+91 9699197282',
-  phoneHref: 'tel:+919699197282',
-  whatsappNumber: '919699197282',
-  emails: ['mrunaljadhav5912@gmail.com', 'webaura06@gmail.com'],
+  city: "Pune",
+  phoneDisplay: "+91 8788640172",
+  phoneHref: "tel:+918788640172",
+  whatsappNumber: "918788640172",
+  emails: ["jayantpotdar2006@gmail.com", "webaura06@gmail.com"],
   instagram: [
-    { label: '@mrunaljadhav99', href: 'https://www.instagram.com/mrunaljadhav99/' },
-    { label: '@webaura_06', href: 'https://www.instagram.com/webaura_06/' },
+    { label: "@jayant._01", href: "https://www.instagram.com/jayant._01/" },
+    { label: "@webaura_06", href: "https://www.instagram.com/webaura_06/" },
   ],
-}
+};
 
 export function buildWhatsAppUrl(message: string) {
   return `https://wa.me/${contactDetails.whatsappNumber}?text=${encodeURIComponent(message)}`
